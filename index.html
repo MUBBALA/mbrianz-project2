@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mynewwebsite</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="websitemenu">
+            <h1 class="mobile-logo"><a href="index.html"><img src="images/dream-logo.png" alt=""></a></h1>
+            <div class="websitemenu-icon">
+            <img src="images/menu-icon-light.png" alt="websitemenu icon">
+            </div>
+    
+        </div><!--/websitemenu-->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="menu.html">about us</a></li>
+                <li class="mobile"><a href="locations.html">locations</a></li>
+                <li class="mobile"><a href="contact.html">contact</a></li>
+                <li class="logo menu-logo"><a href="index.html">Dream Poultry Farm logo</a></li>
+                <li class="desktop"><a href="locations.html">locations</a></li>
+                <li class="desktop"><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>  
+
+    </header>
+    <section class="features">
+        <figure>
+             <img src="images/1.JPG" alt="a little goat with its mother">
+
+            <figcaption>Goats section</figcaption>
+            
+        </figure>
+             
+        <figure>
+            <img src="images/2.JPG" alt="Mother pig waiting for food">
+
+            <figcaption>Piggery Section</figcaption>
+
+        </figure>
+        <figure>
+            <img src="images/3.JPG" alt="Kroilers in their house">
+
+            <figcaption>Poultry/Kroilers section </figcaption>
+        </figure>
+    </section>
+
+    <section class="content-wrap">
+        <main>
+            <section class="col-1">
+                <h2>LEFT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua, Ut enim ad minim veniam. </p>
+
+            </section>
+            <section class="col-2">
+                <h2>RIGHT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua, Ut enim ad minim veniam. </p>
+
+            </section>
+            <section class="newsletter">
+                <h3>stay connected</h3>
+                <p>Join our email list to recieve exclusive updates, offers, and content</p>
+                 <form action="" method="">
+                     <input type="email" name="email" placeholder="Enter Email" >
+                      <input type="submit" value="JOIN">
+                 </form>
+                
+                <ul>
+                    <li><a href="" class="hide twitter">Twitter</a></li>
+                    <li><a href="" class="hide google_plus">Google plus</a></li>
+                    <li><a href="" class="hide facebook">Facebook</a></li>
+                </ul>
+            </section>
+        
+
+        </main><!--/main-->
+        <aside>
+            <section>
+                <h3>Also recommended for you</h3>
+                <ul>
+                    <li><a href=""> &raquo; Jupiter & His Mighty Company</a></li>
+                    <li><a href=""> &raquo; The Golden Age</a></li>
+                    <li><a href=""> &raquo; The Story of Prometheus</a></li>
+                    <li><a href=""> &raquo; The Flood</a></li>
+                    <li><a href=""> &raquo; The Story of Io</a></li>
+                    <li><a href=""> &raquo; The Wonderful Weaver</a></li>
+                    <li><a href=""> &raquo; Cadmus and Europa</a></li>
+                    <li><a href=""> &raquo; The Quest for Medusa's Head</a></li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <div class="dream-ad" style="border: 1px solid #999; padding: 0; background: #eee; ">
+            <img src="images/dream-banner3.jpg" alt=""   >
+        </div>
+        
+     
+    
+    </section>
+
+    <footer>
+        <p>&copy;2020 Dream Poultry &amp; Animal Farm, All rights reserved<br>Website developed by Mbrianz productions</p>
+    </footer>
+
+
+
+<!--Javasript for the websitemenu on mobile-->
+    <script>
+
+        (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('.websitemenu-icon img');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('menu');
+                     e.preventDefault();
+                });   
+        })();
+
+    </script>
+</body>
+</html>
